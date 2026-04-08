@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "a87f2771-9522-4517-a48d-4a69c38fd647",
+      "name": "pakwheels_asset"
+    },
+    "batch_definition": {
+      "id": "a47a5ba4-e7fc-4235-9a83-68ff10a20d6f",
+      "name": "whole_dataframe"
+    },
+    "datasource": {
+      "id": "08727dbf-81a5-42e0-8c49-fcbee3cfa4d3",
+      "name": "pakwheels_datasource"
+    }
+  },
+  "id": "47976bc3-2899-466f-adc1-8655bc41c268",
+  "name": "pakwheels_run",
+  "suite": {
+    "id": "a54754f8-7d63-4038-abff-dc610efce643",
+    "name": "pakwheels_expectation_suite"
+  }
+}

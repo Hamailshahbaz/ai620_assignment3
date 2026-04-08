@@ -1,0 +1,86 @@
+{
+  "expectations": [
+    {
+      "id": "2d97b138-54fe-4abb-bfbe-8741bdd74124",
+      "kwargs": {
+        "column": "addref"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "7c540e87-9a35-4799-a410-6fb0c09cf187",
+      "kwargs": {
+        "column": "year",
+        "max_value": 2026.0,
+        "min_value": 1980.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "b5e24309-9030-41e5-9025-410c790c91e1",
+      "kwargs": {
+        "column": "transmission",
+        "value_set": [
+          "Manual",
+          "Automatic",
+          "manual",
+          "automatic"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "7a1c15ad-b36b-4955-a41c-107a64fcbfbb",
+      "kwargs": {
+        "column": "engine",
+        "max_value": 6000.0,
+        "min_value": 600.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "72290206-12db-488f-8624-5828eef26097",
+      "kwargs": {
+        "column": "mileage",
+        "max_value": 1000000.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "b1093710-0458-4488-9ea4-f3a04821a5d9",
+      "kwargs": {
+        "column": "price"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "9a3dd53e-6626-482e-ad1d-324e76051b9f",
+      "kwargs": {
+        "column": "price",
+        "min_value": 100000.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "a54754f8-7d63-4038-abff-dc610efce643",
+  "meta": {
+    "great_expectations_version": "1.15.2"
+  },
+  "name": "pakwheels_expectation_suite",
+  "notes": null
+}

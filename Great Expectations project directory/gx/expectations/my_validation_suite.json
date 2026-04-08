@@ -1,0 +1,74 @@
+{
+  "expectations": [
+    {
+      "id": "f7bc3686-fdff-42a8-95b2-7891b22941ca",
+      "kwargs": {
+        "column": "customer_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "16e6b464-57d8-492a-ba2e-fe40d59c48bd",
+      "kwargs": {
+        "column": "sale_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "f01250f3-5277-44c7-b477-506add3b4f82",
+      "kwargs": {
+        "column": "quantity",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "fa1b6f27-0a00-46e9-b59a-0393b0ec7866",
+      "kwargs": {
+        "column": "amount",
+        "regex": "^-?\\d+(\\.\\d+)?$"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "d558c53a-1795-4fa2-9493-427f97610e7f",
+      "kwargs": {
+        "column": "channel",
+        "value_set": [
+          "mobile_app",
+          "online",
+          "store",
+          "partner"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "2a0c196e-f698-47e5-acb5-7db48a744e12",
+      "kwargs": {
+        "column": "amount",
+        "max_value": 1000.0,
+        "min_value": 5.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_mean_to_be_between"
+    }
+  ],
+  "id": "9162ba3a-c926-47ca-b1ff-c572352cf92b",
+  "meta": {
+    "great_expectations_version": "1.15.2"
+  },
+  "name": "my_validation_suite",
+  "notes": null
+}
